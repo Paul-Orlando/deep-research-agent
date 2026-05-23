@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Deep Research Agent
+### Built with Claude Code · Next.js · OpenRouter · Exa AI
 
-## Getting Started
+A production-ready deep research agent that accepts a natural
+language query, generates targeted sub-queries, searches 30+
+live web sources via Exa, and synthesizes a structured markdown
+research report — all streaming in real time.
 
-First, run the development server:
+Built entirely using Claude Code — Anthropic's agentic coding tool.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What It Does
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Accepts a natural language research query
+2. Generates 6+ targeted sub-queries automatically
+3. Searches 30+ sources via Exa web search API
+4. Synthesizes findings into structured markdown
+5. Streams the response in real time to the UI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Example Output
 
-To learn more about Next.js, take a look at the following resources:
+**Query:** "Who is the digital artist Lente Scura?"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Agent generated sub-queries:**
+- Biography and real identity of digital artist Lente Scura
+- Lente Scura digital art style and creative philosophy
+- Official art portfolio and social media presence
+- NFT marketplace sales and digital art exhibitions
+- Critical reception and reviews of artwork
+- Collaborations and presence in the digital art community
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Sources found:** 30+
+**Output:** Structured markdown research report with
+sections, citations, and linked sources — streamed live
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 15 (App Router) |
+| Language | TypeScript |
+| UI | shadcn/ui + Tailwind CSS |
+| AI Routing | OpenRouter API |
+| Default Model | google/gemini-3-flash-preview |
+| Web Search | Exa AI Search API |
+| Built With | Claude Code |
+
+---
+
+## Architecture
