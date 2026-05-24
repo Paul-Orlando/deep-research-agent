@@ -1,12 +1,4 @@
 # Deep Research Agent
----
-
-## 🔗 Live Demo
-
-**[Try it live → deep-research-agent-five.vercel.app](https://deep-research-agent-five.vercel.app/)**
-
----
-
 ### Built with Claude Code · Next.js · OpenRouter · Exa AI
 
 A production-ready deep research agent that accepts a natural
@@ -15,6 +7,12 @@ live web sources via Exa, and synthesizes a structured markdown
 research report — all streaming in real time.
 
 Built entirely using Claude Code — Anthropic's agentic coding tool.
+
+---
+
+## 🔗 Live Demo
+
+**[Try it live → deep-research-agent-five.vercel.app](https://deep-research-agent-five.vercel.app/)**
 
 ---
 
@@ -57,20 +55,23 @@ sections, citations, and linked sources — streamed live
 | Default Model | google/gemini-3-flash-preview |
 | Web Search | Exa AI Search API |
 | Built With | Claude Code |
+| Deployed On | Vercel |
 
 ---
 
 ## Architecture
 
+```
 User Query
-↓
+    ↓
 Sub-Query Generator (OpenRouter LLM)
-↓
+    ↓
 Exa Web Search (30+ sources per query)
-↓
+    ↓
 Synthesis Agent (OpenRouter LLM)
-↓
+    ↓
 Streaming Markdown Response → UI
+```
 
 ---
 
@@ -123,6 +124,7 @@ npm run dev
 | `hooks/` | Custom React hooks |
 | `AGENTS.md` | Claude Code agent configuration |
 | `CLAUDE.md` | Claude Code project instructions |
+| `.env.example` | Environment variable template |
 
 ---
 
