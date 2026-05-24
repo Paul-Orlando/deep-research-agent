@@ -1,4 +1,12 @@
 # Deep Research Agent
+---
+
+## 🔗 Live Demo
+
+**[Try it live → deep-research-agent-five.vercel.app](https://deep-research-agent-five.vercel.app/)**
+
+---
+
 ### Built with Claude Code · Next.js · OpenRouter · Exa AI
 
 A production-ready deep research agent that accepts a natural
